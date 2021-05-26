@@ -8,7 +8,7 @@ For more details, please check the publication below.
 
 Saner 2020: [MobiLogLeak: A Preliminary Study on Data Leakage Caused by Poor Logging Practices](https://ieeexplore.ieee.org/document/9054831)
 
-# LogDroid Usage Steps:
+# 1. LogDroid Usage Steps:
 
 1. Put the APKs in the folder "bin" - I improve the shell command, now it can make the taint flow analysis for **all** the apks in "bin" folder. Don't have to run it one by one.
 2. Use CMD and run start.sh
@@ -18,13 +18,13 @@ sudo bash start.sh
 ```
 3. Check the file in the folder "result" - the results of Analysis
 
-# LogDroid Modification Steps:
+# 2. LogDroid Modification Steps:
 
 1. Change the code in **src/**
 2. Generate jar file and name it as Logdroid.jar
 3. Put it into "lib\" and replace the original one
 
-# LogDroid Structure
+# 3. LogDroid Structure
 
 ## bin\
 
