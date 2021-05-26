@@ -11,19 +11,12 @@ Provide instructions on how to run the tool in Readme. Also refer to the SANER p
 sudo bash start.sh
 ```
 
-3. Check the file in the folder 'LogDroid/result'
+3. Check the file in the folder 'LogDroid/result' - the results of Analysis
 
-## LogDroid Extension
+## bin\ - Include all the java file of this LogDroid
 
-To extend the library of Log, go to 'com.stl.Logdroid.LogDef.java'
-
-To modify the power of different source categorization, go to 'com.stl.Logdroid.App.java.'
+LogDroid.jar 
+- To extend the library of Log, go to 'com.stl.Logdroid.LogDef.java'
+- To modify the power of different source categorization, go to 'com.stl.Logdroid.App.java.'
  
-## Flowdroid_EXTENSION
-
-This folder is used to package all the dependencies for Taint Flow. To operate it, please use the command:
-```
-java -jar soot-infoflow-cmd-jar-with-dependencies-print.jar -p android.jar -s SourcesAndSinks.txt -a @application -o sootOutput/
-```
-
--p,--platformsdir <arg> Path to the platforms directory from the Android SDK
+flowdroid.jar - This file includes all the dependencies for Taint Flow Analysis. 
