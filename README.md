@@ -1,13 +1,18 @@
 # MobiLogLeak
 
-This Tool works for Taint-Flow Analysis on Android apps, and generates the recommandation to solve the data leakage.
+MobiLogLeak is a tool that detects logging statements in Android apps that may leak sensitive data. The tool operates on apk files and does not require the presence of the source code.
+It combines decompilation technology and taint flow analysis to analyse the content of apps, looking for logging statements that may reveal sensitive data.
 
-It's necessary to have the basic knowledge of Shell and taint flow analysis to work with this tool. 
-If it's required to modify this tool, it's better to have a good understanding of git, operating Java with Shell command, Jimple code and Decompilation.
+For more details, please refer to the following paper. Also please cite this paper if you use the tool:
 
-For more details, please check the publication below.
+R. Zhou, M. Hamdaqa, H. Cai, and A. Hamou-Lhadj, <a href ="http://users.encs.concordia.ca/~abdelw/papers/saner20_mobilogloeak_preprint.pdf"> 
+"MobiLogLeak: A preliminary study on data leakage caused by poor logging practices,"</a> In Proc. of the IEEE 27th  International Conference on Software Analysis, Evolution, and Reengineering (SANER'20), pp. 577-581, 2020. 
 
-Saner 2020: [MobiLogLeak: A Preliminary Study on Data Leakage Caused by Poor Logging Practices](https://ieeexplore.ieee.org/document/9054831)
+
+
+
+# Instructions
+
 
 *Please do not PUSH to 'main' branch. Create an new branch for yourself, and change the code or file structure on it, many thanks ;)*
 
@@ -45,3 +50,19 @@ LogDroid.jar
 flowdroid.jar - This file includes all the dependencies of [Flowdroid](https://github.com/secure-software-engineering/FlowDroid) for Taint Flow Analysis. 
 
 ## src\ - Java source code
+
+# Developers:
+
+MobiLogLeak was developed at the SRT-Lab, ECE, Concordia University. The tool was designed and developed by the following individuals:
+
+<ul>
+<li> Rui Zhou (Main developer) </li>
+<li> Wahab Hamou-Lhadj (Science director and project supervisor) </li>
+<li> Haipeng Cai (Science director and project co-supervisor) </li>
+</ul>
+
+
+# Contact Information
+
+If you have questions about the tool implementation, please contact Rui Zhou (tonyzhou@live.cn). If you have questions about the scientific approach behind MobiLogLeak, please contact
+Dr. Wahab Hamou-Lhadj at wahab.hamou-lhadj@concordia.ca
