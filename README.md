@@ -1,13 +1,16 @@
 # MobiLogLeak
 
 This Tool works for Taint-Flow Analysis on Android apps, and generates the recommandation to solve the data leakage.
+
 It's necessary to have the basic knowledge of Shell and taint flow analysis to work with this tool. 
 If it's required to modify this tool, it's better to have a good understanding of git, operating Java with Shell command, Jimple code and Decompilation.
-Please create an new branch for yourself before you change the code or file structure, many thanks ;)
 
 For more details, please check the publication below.
 
 Saner 2020: [MobiLogLeak: A Preliminary Study on Data Leakage Caused by Poor Logging Practices](https://ieeexplore.ieee.org/document/9054831)
+
+*Please do not PUSH to 'main' branch. Create an new branch for yourself, and change the code or file structure on it, many thanks ;)*
+
 
 # 1. LogDroid Usage Steps:
 
